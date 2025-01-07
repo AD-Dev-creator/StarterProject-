@@ -5,3 +5,24 @@ Next.js 🌐: A React framework for server-side rendering and static site genera
 Electron.js 🖥️: A framework for creating cross-platform desktop applications with JavaScript, HTML, and CSS.
 
 🔧 Objective: To simplify and accelerate the start-up of development projects.
+
+
+## Install Dependencies 📦
+
+### Back-End ⚙️
+
+```bash
+cd backend
+yarn install
+```
+
+#### For further instructions, please refer to the README file in the 📁backend directory.
+
+### Front-End 🚀
+
+```bash
+cd frontend
+yarn install
+```
+
+#### For further instructions, please refer to the README file in the 📁frontend directory.
