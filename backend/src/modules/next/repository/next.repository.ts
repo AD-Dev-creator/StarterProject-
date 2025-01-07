@@ -1,5 +1,13 @@
-import { Express } from "express";
+import { execaCommand } from "execa";
 
-export class NextReposiroty {}
+class NextRepository {
+  createNextAppTypeScript = async (appName: string) => {
+    // await execaCommand(`npx create-next-app@latest ${appName} --ts`);
+  };
 
-export const nextReposiroty = new NextReposiroty();
+  createNextApp = async (appName: string) => {
+    // await execaCommand(`npx create-next-app@latest ${appName}`);
+  };
+}
+
+export default new NextRepository();
