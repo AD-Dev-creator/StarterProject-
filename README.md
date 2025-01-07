@@ -2,7 +2,9 @@
 
 Next.js 🌐: A React framework for server-side rendering and static site generation.
 
-Electron.js 🖥️: A framework for creating cross-platform desktop applications with JavaScript, HTML, and CSS.
+Electron.js 🖥️: A framework for creating cross-platform desktop applications.
+
+API REST TypeScript 🛠️: A TypeScript-based REST API.
 
 🔧 Objective: To simplify and accelerate the start-up of development projects.
 
