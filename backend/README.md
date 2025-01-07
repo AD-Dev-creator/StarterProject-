@@ -9,9 +9,3 @@ A REST API built with TypeScript, Express, Jest.js.
 ```bash
 yarn test
 ```
-
-# Deploy migrations 🚀
-
-```bash
-npx prisma migrate deploy
-```
