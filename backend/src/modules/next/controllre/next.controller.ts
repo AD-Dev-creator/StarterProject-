@@ -11,11 +11,10 @@ export class NextController {
       const { appName } = req.body;
       await nextRepository.createNextAppTypeScript(appName);
 
-      res.status(201).json({ message: "Next.js app created successfully" });
+      return res
+        .status(201)
+        .json({ message: "Next.js app created successfully" });
     } catch (error) {
-      res
-        .status(500)
-        .json({ message: "An error occurred while creating the Next.js app" });
       next(error);
     }
   };
