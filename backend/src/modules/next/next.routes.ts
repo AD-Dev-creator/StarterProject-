@@ -3,4 +3,4 @@ import { nextController } from "./controllre/next.controller";
 
 export const nextRouter = Router();
 
-nextRouter.post("/next/create-ts", nextController.createTypeScript);
+nextRouter.post("/next/create-ts", nextController.createNextApp);

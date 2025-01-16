@@ -1,7 +1,7 @@
 import { exec } from "child_process";
 import path from "path";
 
-export const createReactApp = async (projectName: string) => {
+export const initializeReactProject = async (projectName: string) => {
   return new Promise((resolve, reject) => {
     const scryptPath = path.join(__dirname, "../../bin/create-react-app.sh");
     const command = `bash ${scryptPath} ${projectName}`;
