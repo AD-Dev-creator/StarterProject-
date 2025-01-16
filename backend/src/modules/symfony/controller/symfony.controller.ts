@@ -23,7 +23,9 @@ export class SymfonyController {
         return;
       }
 
-      res.status(201).json({ result });
+      res
+        .status(201)
+        .json({ result, message: "Symfony App created successfully " });
     } catch (error) {
       next(error);
     }
