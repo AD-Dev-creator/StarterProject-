@@ -1,26 +1,26 @@
 import { Request, Response, NextFunction } from "express";
-import { createNextApp } from "../next.services";
+import { initializeNextProject } from "../next.services";
 import nextRepository from "../repository/next.repository";
 
 export class NextController {
-  createTypeScript = async (
-    req: Request,
-    res: Response,
-    next: NextFunction
-  ) => {
+  createNextApp = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const { projectName } = req.body;
 
       if (!projectName) {
-        return res.status(400).json({ message: "Project name is required" });
+        res.status(400).json({ message: "Project name is required" });
+        return;
       }
 
-      await nextRepository.createNextAppTypeScript(projectName);
-      res
-        .status(200)
-        .json({ message: "Project created", details: projectName });
+      const result = await initializeNextProject(projectName);
+
+      if (!result) {
+        res.status(500).json({ message: "Project Next.js not created" });
+        return;
+      }
+
+      res.status(201).json({ result });
     } catch (error) {
-      res.status(500).json({ message: "Error creating project" });
       next(error);
     }
   };
