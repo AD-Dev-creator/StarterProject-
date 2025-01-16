@@ -22,7 +22,9 @@ class ReactController {
         return;
       }
 
-      res.status(201).json({ result });
+      res
+        .status(201)
+        .json({ result, message: "React App created successfully" });
     } catch (error) {
       next(error);
     }

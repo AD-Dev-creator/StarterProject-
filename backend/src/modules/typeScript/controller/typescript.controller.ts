@@ -23,7 +23,9 @@ export class TypeScriptController {
         return;
       }
 
-      res.status(201).json({ result });
+      res
+        .status(201)
+        .json({ result, message: "TypeScript API created successfully" });
     } catch (error) {
       next(error);
     }

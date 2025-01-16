@@ -19,7 +19,9 @@ export class NextController {
         return;
       }
 
-      res.status(201).json({ result });
+      res
+        .status(201)
+        .json({ result, message: "Next.js App created successfully" });
     } catch (error) {
       next(error);
     }
