@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start",
+    "start": "electron .",
     "lint": "next lint"
   },
   "dependencies": {
@@ -14,13 +14,15 @@
     "next": "15.1.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-icons": "^5.4.0"
+    "react-icons": "^5.4.0",
+    "react-spinners": "^0.15.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@types/node": "^22.10.7",
     "@types/react": "^19.0.7",
     "@types/react-dom": "^19",
+    "electron": "^34.0.2",
     "eslint": "^9.18.0",
     "eslint-config-next": "15.1.4",
     "eslint-config-prettier": "^10.0.1",

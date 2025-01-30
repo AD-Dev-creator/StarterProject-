@@ -1,10 +1,11 @@
 "use-client";
 
 import React from "react";
+import { StaticImageData } from "next/image";
 
 interface CardProps {
   title: string;
-  image: string;
+  image: string | StaticImageData;
   description: string;
   onClick?: () => void;
 }
@@ -17,7 +18,7 @@ const Card: React.FC<CardProps> = ({ title, image, description, onClick }) => {
     >
       <img
         className="mt-5 w-20 h-25 object-center object-cover"
-        src={image}
+        src={typeof image === "string" ? image : image.src}
         alt={description}
       />
       <div className="card-body mt-6 p-4">

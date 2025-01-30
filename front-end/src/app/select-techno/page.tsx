@@ -3,55 +3,78 @@
 import { useRouter } from "next/navigation";
 import React from "react";
 import Card from "@/src/components/ui/card/card";
-import NextPage from "../technology/next/page";
-import ReactPage from "../technology/react/page";
-import SymfonyPage from "../technology/symfony/page";
-import selectTypeScript from "../technology/typeScript/page";
-import TitlePage from "@/src/components/ui/title/title";
 import BackCross from "@/src/components/ui/buttom/backCross";
+import SymfonyImage from "@/src/assets/images/symfony.png";
+import ReactImage from "@/src/assets/images/React.webp";
+import NextImage from "@/src/assets/images/nextjs.png";
+import TypeScriptImage from "@/src/assets/images/typescript.svg";
 
 const SelectTechno = () => {
   const router = useRouter();
 
   const selectSymfony = () => {
-    router.push("/workspace/symfony");
+    // This button launches the request on the road which allows you to create a new symfony project.
+    // Added page loading between the request and the response.
+    // If the creation is successful, it returns to the success page.
+    // If there is an error it returns to the error page.
+  };
+
+  const selectTypeScript = () => {
+    // This button launches the request on the road which allows you to create a new TypeScript API project.
+    // Added page loading between the request and the response.
+    // If the creation is successful, it returns to the success page.
+    // If there is an error it returns to the error page.
+  };
+
+  const ReactPage = () => {
+    // This button launches the request on the road which allows you to create a new react project.
+    // Added page loading between the request and the response.
+    // If the creation is successful, it returns to the success page.
+    // If there is an error it returns to the error page.
+  };
+
+  const NextPage = () => {
+    // This button launches the request on the road which allows you to create a new next.js project.
+    // Added page loading between the request and the response.
+    // If the creation is successful, it returns to the success page.
+    // If there is an error it returns to the error page.
   };
 
   return (
     <>
-      <div className="mt-10 mb-30 ml-10 flex space-x-4 text-start justify-between text-sizeColor">
+      <div className="mt-10 mb-8 ml-10 flex space-x-4 text-start justify-between text-sizeColor">
         <h1 className="text-3xl font-bold">Select your techno</h1>
 
-        <div className="flex justify-end pr-20">
+        <div className="flex justify-end pr-5">
           <BackCross onClick={() => router.push("/home")} />
         </div>
       </div>
 
-      <div className="flex mt-20 space-x-4 justify-center">
+      <div className="flex flex-col md:flex-row mt-20 space-y-4 md:space-y-0 md:space-x-4 justify-center">
         <Card
           title="Symfony backend"
-          image="https://cdn.icon-icons.com/icons2/2415/PNG/512/symfony_original_wordmark_logo_icon_146328.png"
+          image={SymfonyImage}
           description="Logo of Symfony"
           onClick={selectSymfony}
         />
 
         <Card
           title="TypeScript API"
-          image="https://cdn.worldvectorlogo.com/logos/typescript.svg"
+          image={TypeScriptImage}
           description="Logo of TypeScript"
           onClick={selectTypeScript}
         />
 
         <Card
           title="React frontend"
-          image="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png"
+          image={ReactImage}
           description="Logo of React"
           onClick={ReactPage}
         />
 
         <Card
           title="Next.js frontend"
-          image="https://static-00.iconduck.com/assets.00/nextjs-icon-1024x1024-5et230l7.png"
+          image={NextImage}
           description="Logo of Next.js"
           onClick={NextPage}
         />

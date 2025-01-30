@@ -2,12 +2,12 @@
 
 import React from "react";
 
-interface ButtonNewProjectProps {
+interface ButtonNewAttempt {
   description: string;
   onClick?: () => void;
 }
 
-const ButtonNewProject: React.FC<ButtonNewProjectProps> = ({
+const ButtonNewAttempt: React.FC<ButtonNewAttempt> = ({
   onClick,
   description,
 }) => {
@@ -15,7 +15,7 @@ const ButtonNewProject: React.FC<ButtonNewProjectProps> = ({
     <div className="flex text-center justify-center">
       <button
         type="submit"
-        className="bg-customButton text-white font-bold py-2 px-4 mt-10 rounded hover:bg-hoverCustomButton active:bg-customButton"
+        className="bg-accent text-white font-bold py-2 px-4 mt-10 rounded hover:bg-highlight active:bg-accent"
         onClick={onClick}
       >
         {description}
@@ -24,4 +24,4 @@ const ButtonNewProject: React.FC<ButtonNewProjectProps> = ({
   );
 };
 
-export default ButtonNewProject;
+export default ButtonNewAttempt;

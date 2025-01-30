@@ -10,7 +10,7 @@ const BackCross: React.FC<BackCrossProps> = ({ onClick }) => {
     <div className="back-cross-container">
       <button
         onClick={onClick}
-        className="justify-end flex text-customButton hover:hoverCustomButton active:customButton"
+        className="justify-end flex text-sizeColor hover:secondary active:sizeColor"
         style={{ background: "none", border: "none", cursor: "pointer" }}
       >
         <FaArrowLeft size={30} />

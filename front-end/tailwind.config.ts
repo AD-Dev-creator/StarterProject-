@@ -12,9 +12,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        customButton: "#1C6C8C",
-        hoverCustomButton: "#35D0F2",
         sizeColor: "#121E26",
+        secondary: "#1C6C8C",
+        accent: "#35D0F2",
+        highlight: "#38E0F2",
+        lightGray: "#D9D9D9",
       },
     },
   },
