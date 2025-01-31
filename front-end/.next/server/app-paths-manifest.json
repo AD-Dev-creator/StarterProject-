@@ -1,0 +1,9 @@
+{
+  "/home/page": "app/home/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/technology-selection/page": "app/technology-selection/page.js",
+  "/error/page": "app/error/page.js",
+  "/loading/page": "app/loading/page.js",
+  "/success/page": "app/success/page.js"
+}
