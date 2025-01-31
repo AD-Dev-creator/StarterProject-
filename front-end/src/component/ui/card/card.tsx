@@ -22,7 +22,7 @@ const Card: React.FC<CardProps> = ({ title, image, description, onClick }) => {
         alt={description}
       />
       <div className="card-body mt-6 p-4">
-        <p className="text-xl font-semibold text-gray-300">{title}</p>{" "}
+        <p className="text-xl font-sans text-highlight">{title}</p>{" "}
       </div>
     </div>
   );

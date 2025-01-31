@@ -2,39 +2,47 @@
 
 import { useRouter } from "next/navigation";
 import React from "react";
-import Card from "@/src/components/ui/card/card";
-import BackCross from "@/src/components/ui/buttom/backCross";
-import SymfonyImage from "@/src/assets/images/symfony.png";
-import ReactImage from "@/src/assets/images/React.webp";
-import NextImage from "@/src/assets/images/nextjs.png";
-import TypeScriptImage from "@/src/assets/images/typescript.svg";
+import Card from "@/src/component/ui/card/card";
+import BackCross from "@/src/component/ui/button/backCross";
+import ImageReact from "@/src/assets/images/React.webp";
+import ImageNext from "@/src/assets/images/nextjs.png";
+import ImageTypeScript from "@/src/assets/images/typescript.svg";
+import ImageSymfony from "@/src/assets/images/symfony.png";
 
 const TechnologySelectionPage = () => {
   const router = useRouter();
 
-  const selectSymfony = () => {
-    // This button launches the request on the road which allows you to create a new symfony project.
+  const createSymfonyProject = () => {
+    // This button open a popup for add the name of the project.
+    const name = prompt("Please enter the name of the new project");
+    // Added name of the request for the creation of the project.
     // Added page loading between the request and the response.
     // If the creation is successful, it returns to the success page.
     // If there is an error it returns to the error page.
   };
 
-  const selectTypeScript = () => {
-    // This button launches the request on the road which allows you to create a new TypeScript API project.
+  const createdTypescriptProject = () => {
+    // This button open a popup for add the name of the project.
+    const name = prompt("Please enter the name of the new project");
+    // Added name of the request for the creation of the project.
     // Added page loading between the request and the response.
     // If the creation is successful, it returns to the success page.
     // If there is an error it returns to the error page.
   };
 
-  const ReactPage = () => {
-    // This button launches the request on the road which allows you to create a new react project.
+  const createdReactProject = () => {
+    // This button open a popup for add the name of the project.
+    const name = prompt("Please enter the name of the new project");
+    // Added name of the request for the creation of the project.
     // Added page loading between the request and the response.
     // If the creation is successful, it returns to the success page.
     // If there is an error it returns to the error page.
   };
 
-  const NextPage = () => {
-    // This button launches the request on the road which allows you to create a new next.js project.
+  const createdNextProject = () => {
+    // This button open a popup for add the name of the project.
+    const name = prompt("Please enter the name of the new project");
+    // Added name of the request for the creation of the project.
     // Added page loading between the request and the response.
     // If the creation is successful, it returns to the success page.
     // If there is an error it returns to the error page.
@@ -43,7 +51,9 @@ const TechnologySelectionPage = () => {
   return (
     <>
       <div className="mt-10 mb-8 ml-10 flex space-x-4 text-start justify-between text-sizeColor">
-        <h1 className="text-3xl font-bold">Select your techno</h1>
+        <h1 className="text-3xl font-poppins sm:text-3xl color-sizeColor underline">
+          Select your techno
+        </h1>
 
         <div className="flex justify-end pr-5">
           <BackCross onClick={() => router.push("/home")} />
@@ -51,32 +61,34 @@ const TechnologySelectionPage = () => {
       </div>
 
       <div className="flex flex-col md:flex-row mt-20 space-y-4 md:space-y-0 md:space-x-4 justify-center">
+        {/* //^ Update this title to the card component for a name proffesionnal */}
+        {/* //^ And update dimensions of the card component for the same size of the card. */}
         <Card
-          title="Symfony backend"
-          image={SymfonyImage}
+          title="Symfony API"
+          image={ImageSymfony}
           description="Logo of Symfony"
-          onClick={selectSymfony}
+          onClick={createSymfonyProject}
         />
 
         <Card
           title="TypeScript API"
-          image={TypeScriptImage}
+          image={ImageTypeScript}
           description="Logo of TypeScript"
-          onClick={selectTypeScript}
+          onClick={createdTypescriptProject}
         />
 
         <Card
           title="React frontend"
-          image={ReactImage}
+          image={ImageReact}
           description="Logo of React"
-          onClick={ReactPage}
+          onClick={createdReactProject}
         />
 
         <Card
           title="Next.js frontend"
-          image={NextImage}
+          image={ImageNext}
           description="Logo of Next.js"
-          onClick={NextPage}
+          onClick={createdNextProject}
         />
       </div>
     </>
