@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "electron .",
+    "start": "next start",
+    "electron": "electron .",
+    "start:electron": "next dev & electron .",
     "lint": "next lint"
   },
   "dependencies": {
