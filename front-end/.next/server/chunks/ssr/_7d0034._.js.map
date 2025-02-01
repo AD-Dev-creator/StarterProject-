@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/adcan/Documents/CodeRequest/StarterProject-/front-end/src/app/configuration-setup/page.tsx"],"sourcesContent":["\"use client\";\r\n\r\nimport React from \"react\";\r\n\r\nconst SetupPage = () => {\r\n  return (\r\n    <>\r\n      <div className=\"flex flex-col items-center justify-center min-h-screen px-4 text-center text-lightGray flex-1\">\r\n        <h1 className=\"text-3xl font-poppins\">Configuration & Setup</h1>\r\n\r\n        <p className=\"mt-5 text-sm font-sans\">\r\n          This is the Configuration & Setup page.\r\n        </p>\r\n      </div>\r\n    </>\r\n  );\r\n};\r\n\r\nexport default SetupPage;\r\n"],"names":[],"mappings":";;;;AAAA;;AAIA,MAAM,YAAY;IAChB,qBACE;kBACE,cAAA,8OAAC;YAAI,WAAU;;8BACb,8OAAC;oBAAG,WAAU;8BAAwB;;;;;;8BAEtC,8OAAC;oBAAE,WAAU;8BAAyB;;;;;;;;;;;;;AAM9C;uCAEe"}},
+    {"offset": {"line": 43, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 53, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/adcan/Documents/CodeRequest/StarterProject-/front-end/node_modules/next/src/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = require('../../module.compiled').vendored[\n  'react-ssr'\n].ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":";AAAAA,OAAOC,OAAO,GAAGC,QAAQ,0HAAyBC,QAAQ,CACxD,YACD,CAACC,kBAAkB","ignoreList":[0]}},
+    {"offset": {"line": 55, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
