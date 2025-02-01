@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/adcan/Documents/CodeRequest/StarterProject-/front-end/src/app/ux-ui/page.tsx"],"sourcesContent":["\"use client\";\r\n\r\nimport React from \"react\";\r\n\r\nconst UserExperiencePage = () => {\r\n  return (\r\n    <>\r\n      <div className=\"flex flex-col items-center justify-center min-h-screen px-4 text-center text-lightGray flex-1\">\r\n        <h1 className=\"text-3xl font-poppins\">User Experience & UI</h1>\r\n\r\n        <p className=\"mt-5 text-sm font-sans\">\r\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do\r\n          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad\r\n          minim veniam, quis nostrud exercitation ullamco laboris nisi ut\r\n          aliquip ex ea commodo consequat.\r\n        </p>\r\n      </div>\r\n    </>\r\n  );\r\n};\r\n\r\nexport default UserExperiencePage;\r\n"],"names":[],"mappings":";;;;AAAA;;AAIA,MAAM,qBAAqB;IACzB,qBACE;kBACE,cAAA,6LAAC;YAAI,WAAU;;8BACb,6LAAC;oBAAG,WAAU;8BAAwB;;;;;;8BAEtC,6LAAC;oBAAE,WAAU;8BAAyB;;;;;;;;;;;;;AAS9C;KAfM;uCAiBS"}},
+    {"offset": {"line": 49, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

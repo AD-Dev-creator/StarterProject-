@@ -11,9 +11,15 @@ __turbopack_esm__({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/navigation.js [app-client] (ecmascript)");
+(()=>{
+    const e = new Error("Cannot find module '@/src/component/ui/sideBar/navBar'");
+    e.code = 'MODULE_NOT_FOUND';
+    throw e;
+})();
 ;
 var _s = __turbopack_refresh__.signature();
 "use client";
+;
 ;
 ;
 const HomePage = ()=>{
@@ -25,7 +31,7 @@ const HomePage = ()=>{
             console.log("Name of the folder :", file.name);
             //^ Added the path of the repository
             //^ Stocked name and path of the repository in the local storage to use it in the next page
-            router.push("/technology-selection");
+            router.push("/configuration-setup");
         } else {
             console.log("None repository selected");
         }
@@ -34,59 +40,102 @@ const HomePage = ()=>{
     const clickButtonNewProject = ()=>{
         fileInputRef.current?.click();
     };
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "flex flex-col items-center justify-center min-h-screen px-4 text-center text-lightGray",
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                className: "text-3xl font-poppins sm:text-3xl",
-                children: "Welcome to the Starter Project!"
-            }, void 0, false, {
-                fileName: "[project]/src/app/home/page.tsx",
-                lineNumber: 32,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                className: "mt-3 text-xs sm:mt-5 sm:text-sm font-sans text-base",
-                children: "Welcome to the Starter Project! This project allows you to create new projects with ease. Click the button below to get started."
-            }, void 0, false, {
-                fileName: "[project]/src/app/home/page.tsx",
-                lineNumber: 36,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex flex-col items-center space-y-4 mt-5",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        onClick: clickButtonNewProject,
-                        className: "px-4 py-2 bg-accent text-white font-poppins mt-5 rounded hover:bg-highlight active:bg-accent",
-                        children: "Select your repository"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/home/page.tsx",
-                        lineNumber: 42,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                        type: "file",
-                        ref: fileInputRef,
-                        onChange: createNewProject,
-                        className: "hidden"
-                    }, void 0, false, {
-                        fileName: "[project]/src/app/home/page.tsx",
-                        lineNumber: 49,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/app/home/page.tsx",
-                lineNumber: 41,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/src/app/home/page.tsx",
-        lineNumber: 31,
-        columnNumber: 5
-    }, this);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
+        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "flex",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(SideBar, {
+                    navItems: [
+                        {
+                            name: "Home",
+                            href: "/home"
+                        },
+                        {
+                            name: "Configuration & Setup",
+                            href: "/configuration-setup"
+                        },
+                        {
+                            name: "Workflow & Automation",
+                            href: "/workflow-automation"
+                        },
+                        {
+                            name: "User Experience & UI",
+                            href: "/ux-ui"
+                        },
+                        {
+                            name: "Back-End & API",
+                            href: "/backend-api"
+                        },
+                        {
+                            name: "Deployment & Extensions",
+                            href: "/deployment-extensions"
+                        }
+                    ]
+                }, void 0, false, {
+                    fileName: "[project]/src/app/home/page.tsx",
+                    lineNumber: 34,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex flex-col items-center justify-center min-h-screen px-4 text-center text-lightGray flex-1",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                            className: "text-3xl font-poppins sm:text-3xl",
+                            children: "Welcome to the Starter Project!"
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/home/page.tsx",
+                            lineNumber: 46,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "mt-3 text-xs sm:mt-5 sm:text-sm font-sans text-base",
+                            children: "Welcome to the Starter Project! This project allows you to create new projects with ease. Click the button below to get started."
+                        }, void 0, false, {
+                            fileName: "[project]/src/app/home/page.tsx",
+                            lineNumber: 50,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex flex-col items-center space-y-4 mt-5",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                    onClick: clickButtonNewProject,
+                                    className: "px-4 py-2 bg-accent text-primary font-poppins py-2 px-4 mt-10 rounded hover:bg-primary hover:text-accent active:bg-accent active:text-primary",
+                                    children: "Select your repository"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/home/page.tsx",
+                                    lineNumber: 56,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                    type: "file",
+                                    ref: fileInputRef,
+                                    onChange: createNewProject,
+                                    className: "hidden"
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/home/page.tsx",
+                                    lineNumber: 63,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/app/home/page.tsx",
+                            lineNumber: 55,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/src/app/home/page.tsx",
+                    lineNumber: 45,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/src/app/home/page.tsx",
+            lineNumber: 33,
+            columnNumber: 7
+        }, this)
+    }, void 0, false);
 };
 _s(HomePage, "gtXm9xeFiKxB9NEGs7P6I8WjhgM=", false, function() {
     return [

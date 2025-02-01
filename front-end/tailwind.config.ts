@@ -12,11 +12,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        backgroundColor: "#121E26",
-        sizeColor: "#D9D9D9",
+        backgroundColor: "#083040",
+        sizeColor: "#A9C6D9",
+        primary: "#CCD4D9",
         secondary: "#1C6C8C",
         accent: "#35D0F2",
-        highlight: "#38E0F2",
       },
       fontFamily: {
         sans: ["var(--font-inter)", "sans-serif"],

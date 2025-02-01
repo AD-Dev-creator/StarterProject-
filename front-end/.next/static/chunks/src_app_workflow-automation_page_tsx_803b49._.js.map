@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/adcan/Documents/CodeRequest/StarterProject-/front-end/src/app/workflow-automation/page.tsx"],"sourcesContent":["\"use client\";\r\n\r\nimport React from \"react\";\r\nimport SideBar from \"@/src/component/ui/sideBar/side\";\r\n\r\nconst WorkflowPage = () => {\r\n  return (\r\n    <div className=\"flex min-h-screen\">\r\n      <div className=\"flex flex-col items-center justify-center flex-1 px-4 text-center text-lightGray\">\r\n        <h1 className=\"text-3xl font-poppins\">Workflow & Automation</h1>\r\n\r\n        <p className=\"mt-5 text-sm font-sans\">\r\n          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do\r\n          eiusmod tempor incididunt ut labore et dolore magna aliqua. <br />\r\n          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris\r\n          nisi ut aliquip ex ea commodo consequat.\r\n        </p>\r\n      </div>\r\n    </div>\r\n  );\r\n};\r\n\r\nexport default WorkflowPage;\r\n"],"names":[],"mappings":";;;;AAAA;;AAKA,MAAM,eAAe;IACnB,qBACE,6LAAC;QAAI,WAAU;kBACb,cAAA,6LAAC;YAAI,WAAU;;8BACb,6LAAC;oBAAG,WAAU;8BAAwB;;;;;;8BAEtC,6LAAC;oBAAE,WAAU;;wBAAyB;sCAEwB,6LAAC;;;;;wBAAK;;;;;;;;;;;;;;;;;;AAO5E;KAfM;uCAiBS"}},
+    {"offset": {"line": 62, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

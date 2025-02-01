@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/adcan/Documents/CodeRequest/StarterProject-/front-end/src/app/backend-api/page.tsx"],"sourcesContent":["\"use client\";\r\n\r\nimport React from \"react\";\r\n\r\nconst BackEndApiPage = () => {\r\n  return (\r\n    <>\r\n      <div className=\"flex flex-col items-center justify-center min-h-screen px-4 text-center text-lightGray flex-1\">\r\n        <h1 className=\"text-3xl font-poppins sm:text-3xl\">Back-End & API</h1>\r\n\r\n        <p className=\"mt-3 text-sm sm:mt-5 sm:text-sm font-sans text-base font-sans\">\r\n          Welcome to the Back-End & API page! This page allows you to learn more\r\n          about the back-end and API of the project.\r\n        </p>\r\n      </div>\r\n    </>\r\n  );\r\n};\r\n\r\nexport default BackEndApiPage;\r\n"],"names":[],"mappings":";;;;AAAA;;AAIA,MAAM,iBAAiB;IACrB,qBACE;kBACE,cAAA,8OAAC;YAAI,WAAU;;8BACb,8OAAC;oBAAG,WAAU;8BAAoC;;;;;;8BAElD,8OAAC;oBAAE,WAAU;8BAAgE;;;;;;;;;;;;;AAOrF;uCAEe"}},
+    {"offset": {"line": 43, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

@@ -15,7 +15,7 @@ const ButtonNewAttempt: React.FC<ButtonNewAttempt> = ({
     <div className="flex text-center justify-center">
       <button
         type="submit"
-        className="bg-accent text-white font-poppins py-2 px-4 mt-10 rounded hover:bg-highlight active:bg-accent"
+        className=" bg-accent text-primary font-poppins py-2 px-4 mt-10 rounded hover:bg-primary hover:text-accent active:bg-accent active:text-primary"
         onClick={onClick}
       >
         {description}
