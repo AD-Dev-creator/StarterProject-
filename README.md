@@ -8,7 +8,7 @@ StarterProject is an application designed to automate the creation of front-end 
 
 ```bash
 cd backend
-yarn install
+npm install
 ```
 
 #### For further instructions, please refer to the README file in the 📁backend directory.
@@ -17,7 +17,7 @@ yarn install
 
 ```bash
 cd frontend
-yarn install
+npm install
 ```
 
 #### For further instructions, please refer to the README file in the 📁frontend directory.

@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.apiRouter = void 0;
+const express_1 = require("express");
+const react_routes_1 = require("./modules/react/react.routes");
+const symfony_routes_1 = require("./modules/symfony/symfony.routes");
+const typeScript_routes_1 = require("./modules/typeScript/typeScript.routes");
+const next_routes_1 = require("./modules/next/next.routes");
+exports.apiRouter = (0, express_1.Router)();
+exports.apiRouter.use("/react", react_routes_1.reactRouter);
+exports.apiRouter.use("/symfony", symfony_routes_1.symfonyRouter);
+exports.apiRouter.use("/typeScript", typeScript_routes_1.typeScriptRouter);
+exports.apiRouter.use("/next", next_routes_1.nextRouter);
